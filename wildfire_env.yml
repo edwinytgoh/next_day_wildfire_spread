@@ -1,0 +1,36 @@
+name: wildfire_env
+channels:
+  - pytorch
+  - nvidia
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - cython
+  - darker
+  - conda-forge::distributed
+  - isort
+  - jupyter
+  - lightning-flash[version='>=0.7.5']
+  - numba[version='>=0.57']
+  - numpy=1.23.5
+  - opencv
+  - pip
+  - python==3.10
+  - pytorch==2.3.1=py3.10_cuda11.8_cudnn8.7.0_0
+  - pytorch-lightning
+  - scikit-learn
+  - seaborn
+  - tabulate
+  - tensorboard
+  - torchmetrics
+  - torchaudio
+  - torchvision
+  - tqdm
+  - wandb
+  - conda-forge::omegaconf
+  - conda-forge::accelerate
+  - conda-forge::huggingface_hub
+  - pip:
+    - tensorflow  # to convert tfrecord to numpy
+prefix: /home/edwin/miniconda3/envs/wildfire_env
